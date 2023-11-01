@@ -3,17 +3,15 @@
 ![emoji-rating](https://github.com/onhope/emoji_rating/assets/97660780/af67a5f0-3005-4d75-9b63-7ececcb87314)  
     
     
-## 이모티콘으로 별점을 평가할 수 있도록 만들었습니다.  
+**이모티콘으로 별점을 평가할 수 있도록 만들었습니다.**
 
 <br>
 
 ## 기능
-이모지를 클릭을 하면, 별점이 1개씩 채워지는 효과를 구현
+이모티콘을 클릭을 하면, 별점이 1개씩 채워지는 효과를 구현
 
 <br>
 
------------------------------------------------------------------------------------------------
- 
 ## 사용한 라이브러리
 ### fontAwesome  
 https://fontawesome.com/  
@@ -25,10 +23,8 @@ https://cdnjs.com/
 
 <br>
 
------------------------------------------------------------------------------------------------
-
-## 학습  
-### 100% 와 100vh의 차이   
+## 학습
+### 1. 100% 와 100vh의 차이   
 
 <br>
 
@@ -55,7 +51,7 @@ body {
 **그러므로 Viewport Height의 100%를 설정하려면**
 <br>
 
-**1. 화면을 100%로 사용하고 싶은 요소에 height: 100vh** 
+**(1) 화면을 100%로 사용하고 싶은 요소에 height: 100vh** 
 ```
 body {
   height: 100vh
@@ -64,7 +60,7 @@ body {
 
 <br>  
 
-**2. 부모와 자식 요소에 똑같이 height: 100%** 
+**(2) 부모와 자식 요소에 똑같이 height: 100%** 
 ```
 html {
   height: 100%;
@@ -75,9 +71,7 @@ body {
 }
 ```
 
-<br>
-
-### css : trassform
+### 2. css : trassform
 
 transform : 회전, 크기 조절, 기울이기, 이동 효과를 부여
 
@@ -92,9 +86,8 @@ transform: scale(0.5) translate(-100%, -100%);
 
 여기서는 translate를 속성값으로 사용하여, 별을 클릭시 이모지가 -50% 씩 이동을 하여 보이도록 만들었다. 
 
-<br>
 
-### Array.prototype.forEach()
+### 3. Array.prototype.forEach()
 : 배열순회 함수  
 : 각 배열 요소에 대해 제공된 함수를 한 번씩 실행
 <br>
@@ -123,7 +116,7 @@ forEach(callbackFn, thisArg)
 
 <br>    
 
-### EventTarget.addEventListener()   
+### 4. EventTarget.addEventListener()   
 : 장점은 하나의 이벤트 대상에 복수의 동일 이벤트 타입 리스너를 등록할 수 있음   
 ```
 <input type="button" id="target" value="button" />
@@ -159,13 +152,9 @@ forEach(callbackFn, thisArg)
 </script>
 ```
 
+<br>  
 
-
-<br>
-<br>
-
-
-학습출처 
-: https://www.youtube.com/@JavaScriptKing 
-: MDN 문서
-: 생활코딩
+학습출처   
+: https://www.youtube.com/@JavaScriptKing   
+: MDN 문서  
+: 생활코딩 
